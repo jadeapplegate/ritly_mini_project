@@ -27,6 +27,10 @@ class UrlsController < ApplicationController
 		redirect_to "http://#{url.link}"
 	end
 
+	def preview
+		@url = Url.find(params[:id])
+	end
+
 	def edit
 		@url = Url.find(params[:id])
 	end

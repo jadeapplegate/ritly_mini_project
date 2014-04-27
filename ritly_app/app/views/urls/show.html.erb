@@ -5,6 +5,7 @@
 
 <%= @url['link'] %> <%= link_to @url['random_string'], "/go/#{@url['random_string']}"%>
 
-
+<%= link_to "Preview Link", preview_url_path(@url)%>
 
 <%= link_to "Edit Link", edit_url_path(@url)%>
+

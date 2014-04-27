@@ -1,9 +1,10 @@
 <!-- Paste field for url to be shortened, option for custom generated link, plus button to show or button to -->
 
 <h1>Welcome to Ritly</h1>
-
-<% flash[:errors].each do |error| %>
-	<p><em> Link <%= error %> </em></p>
+<% if flash[:errors] %>
+	<% flash[:errors].each do |error| %>
+		<p><em> Link <%= error %> </em></p>
+	<% end %>
 <% end %>
 
 <%= form_for @url do |f| %>

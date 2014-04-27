@@ -1,0 +1,8 @@
+<h1> Preview Page </h1>
+
+<iframe  id="iframe" src=<%="/go/#{@url['random_string']}"%> width="600" height="600">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</br>
+<%= link_to 'Go to this page', "/go/#{@url['random_string']}"%>
+
