@@ -1,0 +1,9 @@
+<h1> This is the show page </h1>
+
+
+<!-- randomly generated string, link to preview page, link to their requested site, plus edit and show all buttons -->
+
+<%= @url['link'] %> <%= link_to @url['random_string'], "/go/#{@url['random_string']}"%>
+
+
+<%= link_to "Edit URL", edit_url_path(@url)%>

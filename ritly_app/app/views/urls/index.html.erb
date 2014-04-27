@@ -1,0 +1,19 @@
+<!-- table of all previously shortened links, from database -->
+
+<h1>All Ritlys</h1>
+<!-- index.html.erb has access to the @todos instance variable from
+     the index method in the controller. -->
+
+<!-- Button to the new method in the controller -->
+
+<% @urls.each do |url| %>
+
+  <%= link_to url["link"] %> <%= url["random_string"]%> </br>
+  <% end %>
+
+  <!-- Link to the edit method in the controller -->
+  <!--<#%= link_to "edit", edit_url_path(url[:id]) , :class => "btn btn-primary btn-xs" %> 
+
+  <!-- Link to the delete method in the controller -->
+ <!-- <#%= link_to "delete", url, method: :delete, data: { confirm: "You sure?" } , :class => "btn btn-danger btn-xs" %>
+  <br>
