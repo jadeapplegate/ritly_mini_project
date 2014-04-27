@@ -2,13 +2,19 @@ class UrlsController < ApplicationController
 
 	def new
 		@url = Url.new
+
 	end
 
 	def create
 		@url = Url.create url_params
 		@url['random_string']=SecureRandom.urlsafe_base64(8)
-		@url.save
-		redirect_to url_path(@url)
+		if @url.save
+			redirect_to url_path(@url)
+		else
+			error_messages = @url.errors.messages.values.flatten
+			flash.now[:errors] = error_messages
+			render action: "new"
+		end
 	end
 
 	def show
