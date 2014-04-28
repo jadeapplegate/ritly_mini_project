@@ -23,7 +23,6 @@ class UrlsController < ApplicationController
 
 	def go
 		url = Url.find_by_random_string(params[:random_string])
-		# binding.pry
 		redirect_to "http://#{url.link}"
 	end
 

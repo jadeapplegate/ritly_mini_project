@@ -1,3 +1,51 @@
 // Place all the styles related to the urls controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#iframe {
+	text-align: center;
+}
+
+body {
+	background-color: #A1C22D;
+  margin: 0;
+  font-size: 25px;
+	font-family: 'Pacifico', 'cursive';
+ 	color: #093E47;
+ /*	background: url(grass.png);
+ 	background-position: absolute;
+ 	 background-attachment:fixed;*/
+}
+
+h2 {
+	font-family: Geneva, Tahoma, Verdana, sans-serif;
+}
+
+.navbar-brand {
+	font-size: 40px;
+	font-family: 'Pacifico', 'cursive';
+	color: #093E47 !important;
+}
+
+.nav.navbar-nav {
+	font-style: italic;
+}
+
+a, a:visited, a:link, a:active {
+	text-decoration: none;
+}
+
+.item {
+		color: #093E47;
+}
+
+.btn, .btn:visited, .btn:link, .btn:active {
+	color: white;
+	background-color: #928F80;
+	margin-left: 10px;
+}
+
+ul {
+	list-style: none;
+}

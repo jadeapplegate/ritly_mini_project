@@ -1,11 +1,11 @@
-<h1> This is the show page </h1>
+<h1> Here's your Ritly!</h1>
 
 
 <!-- randomly generated string, link to preview page, link to their requested site, plus edit and show all buttons -->
 
-<%= @url['link'] %> <%= link_to @url['random_string'], "/go/#{@url['random_string']}"%>
+<%#= @url['link'] %> <h2><%= link_to @url['random_string'], "/go/#{@url['random_string']}"%></h2>
 
-<%= link_to "Preview Link", preview_url_path(@url)%>
+</br><%= link_to "Preview", preview_url_path(@url),:class => "btn btn-primary btn-lg"%>
 
-<%= link_to "Edit Link", edit_url_path(@url)%>
+<%= link_to "Edit", edit_url_path(@url),:class => "btn btn-primary btn-lg"%>
 
